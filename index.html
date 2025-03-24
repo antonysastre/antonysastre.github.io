@@ -15,3 +15,13 @@ title: Home
   </li>
   {% endfor %}
 </ul>
+
+<div class="site-links">
+  <p>Visit my <a href="{{ site.url }}">main site</a> for more information.</p>
+  {% if site.github_username %}
+  <p>
+    Check out my
+    <a href="https://github.com/{{ site.github_username }}">GitHub profile</a>.
+  </p>
+  {% endif %}
+</div>
