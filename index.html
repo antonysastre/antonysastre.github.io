@@ -5,7 +5,19 @@ title: Home
 
 <h1>Welcome to {{ site.title }}</h1>
 
-<p>This is the homepage. Here's a list of my latest posts:</p>
+<p>
+  {{ site.description }} I enjoy I love all things tech, but mainly building
+  user-friendly online services that make life easier for others, and improve
+  your everyday online security. Current favourite programming languages are
+  <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer"
+    >Ruby on Rails</a
+  >,
+  <a href="https://www.rust-lang.org/" target="_blank" rel="noopener noreferrer"
+    >Rust</a
+  >
+  and
+  <a href="https://go.dev/" target="_blank" rel="noopener noreferrer">Go</a>.
+</p>
 
 <ul>
   {% for post in site.posts limit:5 %}
